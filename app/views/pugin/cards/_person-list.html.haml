@@ -5,7 +5,7 @@
         %a{:href => "/people/#{person.id}"}= person.name
     - if person.respond_to?(:constituency) && person.respond_to?(:constituency_id)
       %li
-        MP for
+        = t('mp_for')
         %a{:href => "/constituencies/#{person.constituency_id}"}= person.constituency
     - if person.respond_to?(:party) && person.respond_to?(:party_id)
       %li
